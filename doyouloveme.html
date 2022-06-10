@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<div>
+    <h1 style="top:100px;left: 50px;position: absolute">Do You Love Me</h1>
+    <input style="top: 165px;left: 50px;position: absolute" onclick="Yesido()" id="OK" type="button" value="Yes" onmouseout="Yess()">
+    <input onmouseout="Yesdo()" onmouseover="notNo()" id="notNo" style="top: 165px;left: 177px;position: absolute" type="button" value="No">
+</div>
+<script>
+    function notNo(){
+        let the =document.getElementById("notNo")
+        let w =window.innerWidth;
+        let h =window.innerHeight;
+        the.value="Yes"
+    }
+    function Yesdo(){
+        let the=document.getElementById("notNo")
+        the.value="No"
+    }
+    function Yesido(){
+        let the=document.getElementById("OK")
+      the.value="Yes love you too"
+    }
+    function Yess(){
+        let the=document.getElementById("OK")
+        the.value="Yes"
+    }
+</script>
+</body>
+</html>
